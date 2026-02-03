@@ -16,8 +16,9 @@ android {
 
         minSdkVersion appAndroidMinSDK
         targetSdkVersion appAndroidTargetSDK
-        resourceConfigurations += ['en_US', 'cs', 'de', 'el', 'es', 'fr', 'hu', 'in', 'it', 'ja', 'ko', 'nl', 'pl', 'pt', 'ru', 'tr', 'uk', 'vi', 'zh_CN']
 
+        // Keep only English (US) and Italian to reduce brand cleanup work
+        resourceConfigurations += ['en_US', 'it']
     }
 
     buildTypes {
